@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/jorgehenriquem/node-gpt/issues"
   },
-  "homepage": "https://github.com/jorgehenriquem/node-gpt#readme"
+  "homepage": "https://github.com/jorgehenriquem/node-gpt#readme",
+  "dependencies": {
+    "chatgpt": "^3.5.1",
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.6.2"
+  }
 }
