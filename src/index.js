@@ -10,5 +10,5 @@ const api = new ChatGPTAPIBrowser({
 })
 await api.initSession()
 
-const result = await api.sendMessage('Hello World!')
+const result = await api.sendMessage('poderia criar um poema sobre saudade?')
 console.log(result.response)
