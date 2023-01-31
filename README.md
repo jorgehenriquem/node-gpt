@@ -1,1 +1,1 @@
-# Testando uma forma simples de enviar mensagens para o ChatGPT da OpenIA
+simple application to test the use of chat-gpt in future projects
