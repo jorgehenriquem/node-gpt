@@ -16,7 +16,7 @@ describe('ChatGPT', () => {
             });
         });
         it ('should return an ok to chatgpt - 200', done => {
-            chai.request('http://localhost:3000')
+            chai.request('http://localhost:3000') //TODO mock this
             .post('/chat-gpt')
             .end((err, res) => {
                 chai.assert.isNull(err);

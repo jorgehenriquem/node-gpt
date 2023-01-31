@@ -1,13 +1,9 @@
 require('dotenv').config();
 
 
-exports.heathCheck = async function (messageChat) { 
-
+exports.heathCheck = async function (messageChat) {
 
     const callChat = await callGpt();  
-
-    console.log(callChat.data.choices); //Return Error with response
-
 
     return { responseChat: callChat };  
   };
@@ -22,8 +18,9 @@ exports.heathCheck = async function (messageChat) {
         model: "text-davinci-003",
         prompt: "Say Hi, just a test",
         temperature: 0,
-        max_tokens: 7,
+        max_tokens: 1000,
     });
-    
-    return response;
+    const final =  response.data.choices[0]; //Make a function to refactor 
+  
+    return final.text;
   }
