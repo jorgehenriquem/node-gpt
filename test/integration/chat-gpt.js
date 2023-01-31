@@ -17,7 +17,7 @@ describe('ChatGPT', () => {
         });
         it ('should return an ok to chatgpt - 200', done => {
             chai.request('http://localhost:3000')
-            .get('/chat-gpt')
+            .post('/chat-gpt')
             .end((err, res) => {
                 chai.assert.isNull(err);
                 res.should.have.status(200);
